@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+OPT_DST_IP	common.h	6;"	d
+OPT_EXEC_MODE	common.h	2;"	d
+OPT_EXPECT_RESPONSE	common.h	8;"	d
+OPT_FILENAME	common.h	3;"	d
+OPT_HELP	common.h	1;"	d
+OPT_LIKE_PING	common.h	10;"	d
+OPT_OUTPUT_HASH	common.h	5;"	d
+OPT_PAYLOAD_LENGTH	common.h	11;"	d
+OPT_RESPOND_TO_CLIENT	common.h	4;"	d
+OPT_SRC_IP	common.h	7;"	d
+OPT_TRANSMIT_INTERVAL	common.h	9;"	d
+checksum	common.c	/^unsigned short checksum (unsigned short *addr, int len) {$/;"	f	signature:(unsigned short *addr, int len)
+checksum	common.h	/^unsigned short checksum (unsigned short *addr, int len);$/;"	p	signature:(unsigned short *addr, int len)
+checksum	icmp_cmd_client.c	/^unsigned short checksum (unsigned short *addr, int len)$/;"	f	signature:(unsigned short *addr, int len)
+checksum	icmp_cmd_server.c	/^unsigned short checksum (unsigned short *addr, int len)$/;"	f	signature:(unsigned short *addr, int len)
+fill_icmp_packet	common.c	/^void fill_icmp_packet(struct icmp *pkt, u_int16_t id, unsigned const char *payload, size_t payload_len, size_t icmp_len) {$/;"	f	signature:(struct icmp *pkt, u_int16_t id, unsigned const char *payload, size_t payload_len, size_t icmp_len)
+fill_icmp_packet	common.h	/^void fill_icmp_packet(struct icmp *pkt, u_int16_t id, unsigned const char *payload, size_t payload_len, size_t icmp_len);$/;"	p	signature:(struct icmp *pkt, u_int16_t id, unsigned const char *payload, size_t payload_len, size_t icmp_len)
+fill_icmp_packet	icmp_cmd_client.c	/^void fill_icmp_packet(struct icmp *pkt, unsigned char *payload, size_t payload_len, size_t icmp_len){$/;"	f	signature:(struct icmp *pkt, unsigned char *payload, size_t payload_len, size_t icmp_len)
+fill_ip_packet	common.c	/^void fill_ip_packet(struct ip *pkt, u_short data_len, const char *src, const char *dst) {$/;"	f	signature:(struct ip *pkt, u_short data_len, const char *src, const char *dst)
+fill_ip_packet	common.h	/^void fill_ip_packet(struct ip *pkt, u_short data_len, const char *src, const char *dst);$/;"	p	signature:(struct ip *pkt, u_short data_len, const char *src, const char *dst)
+fill_ip_packet	icmp_cmd_client.c	/^void fill_ip_packet(struct ip *pkt, u_short data_len, char *dst){$/;"	f	signature:(struct ip *pkt, u_short data_len, char *dst)
+flags	common.h	/^  unsigned long long flags;$/;"	m	struct:options	access:public
+main	icmp_client.c	/^int main (int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	icmp_cmd_client.c	/^int main (int argc, char **argv){$/;"	f	signature:(int argc, char **argv)
+main	icmp_cmd_server.c	/^int main (int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	icmp_server.c	/^int main (int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+options	common.h	/^struct options {$/;"	s
+options	common.h	/^} options;$/;"	v	typeref:struct:options
+options::flags	common.h	/^  unsigned long long flags;$/;"	m	struct:options	access:public
+usage	icmp_client.c	/^void usage() {$/;"	f
+usage	icmp_cmd_client.c	/^void usage(){$/;"	f
+usage	icmp_cmd_server.c	/^void usage(){$/;"	f
+usage	icmp_server.c	/^void usage() {$/;"	f
